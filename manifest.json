@@ -1,0 +1,23 @@
+{
+  "short_name": "Bike Advance",
+  "name": "Bike Advance",
+  "description": "A comprehensive web application for bikers to calculate fuel efficiency, track rides, analyze driving patterns with AI, and manage their vehicle's performance with a modern, Material Design 3 inspired interface.",
+  "icons": [
+    {
+      "src": "icon-192x192.png",
+      "type": "image/png",
+      "sizes": "192x192",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "icon-512x512.png",
+      "type": "image/png",
+      "sizes": "512x512",
+      "purpose": "any maskable"
+    }
+  ],
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#5522ee",
+  "background_color": "#fafbff"
+}

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bike Advance</title>
+    <meta name="theme-color" content="#5522ee" />
+    <link rel="manifest" href="/manifest.json" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              primary: 'hsl(260 80% 55%)',
+              'primary-container': 'hsl(260 95% 90%)',
+              'on-primary': 'hsl(0 0% 100%)',
+              'on-primary-container': 'hsl(260 80% 20%)',
+              secondary: 'hsl(300 70% 50%)',
+              'secondary-container': 'hsl(300 95% 90%)',
+              'on-secondary': 'hsl(0 0% 100%)',
+              'on-secondary-container': 'hsl(300 70% 20%)',
+              tertiary: 'hsl(210 80% 55%)',
+              'tertiary-container': 'hsl(210 95% 90%)',
+              'on-tertiary': 'hsl(0 0% 100%)',
+              'on-tertiary-container': 'hsl(210 80% 20%)',
+              surface: 'hsl(240 20% 98%)',
+              'surface-variant': 'hsl(240 10% 90%)',
+              'on-surface': 'hsl(240 10% 10%)',
+              'on-surface-variant': 'hsl(240 10% 30%)',
+              background: 'hsl(240 20% 99%)',
+              'on-background': 'hsl(240 10% 10%)',
+              outline: 'hsl(240 5% 50%)',
+              'inverse-surface': 'hsl(240 10% 20%)',
+              'inverse-on-surface': 'hsl(240 5% 95%)',
+              error: 'hsl(0 80% 50%)',
+              'on-error': 'hsl(0 0% 100%)',
+            },
+          },
+        },
+      };
+    </script>
+  <script type="importmap">
+{
+  "imports": {
+    "react/": "https://aistudiocdn.com/react@^19.1.1/",
+    "react": "https://aistudiocdn.com/react@^19.1.1",
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.1.1/",
+    "@google/genai": "https://aistudiocdn.com/@google/genai@^1.19.0"
+  }
+}
+</script>
+</head>
+  <body>
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div id="root"></div>
+    <script>
+      if ('serviceWorker' in navigator) {
+        window.addEventListener('load', () => {
+          navigator.serviceWorker.register('/service-worker.js').then(registration => {
+            console.log('ServiceWorker registration successful with scope: ', registration.scope);
+          }, err => {
+            console.log('ServiceWorker registration failed: ', err);
+          });
+        });
+      }
+    </script>
+    <script type="module" src="/index.tsx"></script>
+  </body>
+</html>

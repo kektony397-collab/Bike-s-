@@ -1,0 +1,7 @@
+{
+  "name": "Copy of Bike Advance",
+  "description": "A comprehensive web application for bikers to calculate fuel efficiency, track rides, analyze driving patterns with AI, and manage their vehicle's performance with a modern, Material Design 3 inspired interface.",
+  "requestFramePermissions": [
+    "microphone"
+  ]
+}
